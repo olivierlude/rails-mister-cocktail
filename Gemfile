@@ -33,6 +33,7 @@ gem 'rspec-rails', group: [ :test ]
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -44,9 +45,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
+
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.

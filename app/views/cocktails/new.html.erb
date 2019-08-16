@@ -1,0 +1,13 @@
+<div class="container mt-5 col-6">
+  <h1>Cocktails</h1>
+
+ <%= simple_form_for(@cocktail) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :name %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+</div>
+

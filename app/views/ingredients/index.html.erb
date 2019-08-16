@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <h1>Ingredients</h1>
+  <p><%= link_to "Add a new ingredient !",new_cocktail_ingredient %></p>
+  <% @ingredients.each do |ingredient| %>
+    <h2><%= link_to  ingredient.name , edit_ingredient_path %></h2>
+    <ul>
+      <% coct.ingredients.each do |ingredient| %>
+        <li><%= ingredient.name %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
